@@ -61,7 +61,7 @@ plot(x = powerDT[, dateTime]
 
 dev.off()
 ```
-![](https://github.com/mGalarnyk/datasciencecoursera/blob/master/4_Exploratory_Data_Analysis/project1/plot2.png)
+![](https://github.com/Hayas312/exploratory-data-analysis-1/blob/master/plot2.png)
 ```R
 library("data.table")
 
@@ -94,7 +94,7 @@ legend("topright"
 
 dev.off()
 ```
-![](https://github.com/mGalarnyk/datasciencecoursera/blob/master/4_Exploratory_Data_Analysis/project1/plot3.png)
+![](https://github.com/Hayas312/exploratory-data-analysis-1/blob/master/plot3.png)
 ```R
 library("data.table")
 
@@ -139,4 +139,4 @@ plot(powerDT[, dateTime], powerDT[,Global_reactive_power], type="l", xlab="datet
 
 dev.off()
 ```
-![](https://github.com/mGalarnyk/datasciencecoursera/blob/master/4_Exploratory_Data_Analysis/project1/plot4.png)
+![](https://github.com/Hayas312/exploratory-data-analysis-1/blob/master/plot4.png)

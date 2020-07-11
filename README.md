@@ -1,11 +1,11 @@
-# exploratory-data-analysis-1
-Peer assignment week 1
+
 
 This assignment uses data from the UC Irvine Machine Learning Repository, a popular repository for machine learning datasets. In particular, we will be using the “Individual household electric power consumption Data Set” which I have made available on the course web site:
 
-Dataset: Electric power consumption [20Mb]
-Description: Measurements of electric power consumption in one household with a one-minute sampling rate over a period of almost 4 years. Different electrical quantities and some sub-metering values are available.
-
+Dataset:
+[Electric power consumption](https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip) [20Mb]
+</br>Description: Measurements of electric power consumption in one household with a one-minute sampling rate over a period of almost 4 years. Different electrical quantities and some sub-metering values are available.
+```R
 library("data.table")
 
 setwd("~/Desktop/datasciencecoursera/4_Exploratory_Data_Analysis/project/data")
@@ -31,8 +31,9 @@ hist(powerDT[, Global_active_power], main="Global Active Power",
      xlab="Global Active Power (kilowatts)", ylab="Frequency", col="Red")
 
 dev.off()
-
-
+```
+![](https://github.com/mGalarnyk/datasciencecoursera/blob/master/4_Exploratory_Data_Analysis/project1/plot1.png)
+```R
 library("data.table")
 
 setwd("~/Desktop/datasciencecoursera/4_Exploratory_Data_Analysis/project/data")
@@ -59,8 +60,9 @@ plot(x = powerDT[, dateTime]
      , type="l", xlab="", ylab="Global Active Power (kilowatts)")
 
 dev.off()
-
-
+```
+![](https://github.com/mGalarnyk/datasciencecoursera/blob/master/4_Exploratory_Data_Analysis/project1/plot2.png)
+```R
 library("data.table")
 
 setwd("~/Desktop/datasciencecoursera/4_Exploratory_Data_Analysis/project/data")
@@ -91,8 +93,9 @@ legend("topright"
        ,lty=c(1,1), lwd=c(1,1))
 
 dev.off()
-
-
+```
+![](https://github.com/mGalarnyk/datasciencecoursera/blob/master/4_Exploratory_Data_Analysis/project1/plot3.png)
+```R
 library("data.table")
 
 setwd("~/Desktop/datasciencecoursera/4_Exploratory_Data_Analysis/project/data")
@@ -135,3 +138,5 @@ legend("topright", col=c("black","red","blue")
 plot(powerDT[, dateTime], powerDT[,Global_reactive_power], type="l", xlab="datetime", ylab="Global_reactive_power")
 
 dev.off()
+```
+![](https://github.com/mGalarnyk/datasciencecoursera/blob/master/4_Exploratory_Data_Analysis/project1/plot4.png)
